@@ -5,52 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatos</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1 style="color: green;">GATOS EN ADOPCIÓN</h1>
+    <<header>
+        <!-- Titulo de la página -->
+        <div class="row">
+            <div class="col text-center">
+                <p></p>
+                <h1><img src="img/logo.png" width="60px">
+                ONG ayuda a un peludo</h1>
+            </div>                
+        </div> 
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid text-white">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Bootstrap" width="30px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" href="gatos.html">Gatos en Adopción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="perros.html">Perros en Adopción</a>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+        </nav>
     </header>
+    
+        <div class="card col-12  p-3">
+            <div class="card-body p-2 m-2">
+                <h2 class="card-title text-start p-2 m-2">Nuestros gatitos en adopción</h2>  
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex consectetur quaerat quod qui dolorem, vero aspernatur doloremque magnam labore ipsum nisi in, quo minus fuga a! Natus tempora possimus voluptates?</p>               
+            </div>
+        </div>    
+    
 
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="gatos.html">Gatos en Adopción</a></li>
-        <li><a href="perros.html">Perros en Adopción</a></li>
-    </ul>
-    <hr>
-
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam, sit aut ipsa odio vitae corporis nesciunt voluptate, pariatur officiis eligendi! Magni consequuntur enim non dolores voluptates adipisci optio alias.</p>
-
-    </section>
-    <hr>
-    <section>
-        <h2 class="h2-center">Nuestros gatos que buscan familia</h2>
-        <table>
-            <tr>
-                <td class="td"><img src="img/gato tommy.jpg" width="300px"></td>
-                <td class="td"><p class="p-font">Tommy</p></td>
-                <td class="td"><a href="gato_tommy.html">Ver Biografía</a></td>
-            </tr>
-            <tr>
-                <td class="td"><img src="img/gato tigre.jpg" width="300px"></td>
-                <td class="td"><p class="p-font">Tigre</p></td>
-                <td class="td"><a href="gato_tigre.html">Ver Biografía</a></td>
-            </tr>
-            <tr>
-                <td class="td"><img src="img/gato garfield.jpg" width="300px"></td>
-                <td class="td"><p class="p-font">Garfield</p></td>
-                <td class="td"><a href="gato_garfield.html">Ver Biografía</a></td>
-            </tr>
-        </table>
-
-    </section>
-
+    <div class="col-12"><h2 class="text-center p-3 col-12">Nuestros gatitos que buscan familia</h2></div>
+        <section class="row justify-content-around gx-4">
+            <div class="card col-3 gx-4 p-3" style="width: 18rem;">
+                <img src="img/gato tommy.jpg" class="card-img-top" alt="gatos">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tommy</h5>                  
+                    <a href="gato_tommy.html" class="btn btn-primary d-grid gap-2">Ver Biografía</a>
+                </div>
+            </div>
+            <div class="card col-3 gx-4 p-3" style="width: 18rem;">
+                <img src="img/gato tigre.jpg" class="card-img-top" alt="perros">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Tigre</h5>                  
+                    <a href="gato_tigre.html" class="btn btn-primary d-grid gap-2">Ver Biografía</a>
+                </div>
+            </div>
+            <div class="card col-3 gx-4 p-3" style="width: 18rem;">
+                <img src="img/gato garfield.jpg" class="card-img-top" alt="perros">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Garfield</h5>                  
+                    <a href="gato_garfield.html" class="btn btn-primary d-grid gap-2">Ver Biografía</a>
+                </div>
+            </div>
+        </section>
     <hr>
     <footer>
         <a href="#top"><p>Página Creada y Elaborada por Pablo Viedma</p></a>
     </footer>
 
-
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

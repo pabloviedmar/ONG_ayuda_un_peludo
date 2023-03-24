@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container" >
-        
+    <div class="container" >        
         <header>
             <!-- Titulo de la página -->
             <div class="row">
@@ -23,7 +22,10 @@
             <!-- Barra de navegación -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Barra de Navegación</a>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="Bootstrap" width="30px">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -47,7 +49,7 @@
 
         <section class="row">
             <div class="card text-bg-secondary mb-3 col-12" >
-                <div class="card-header">Sobre nosotros</div>
+                <div class="card-header h2">Sobre nosotros</div>
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam magnam laborum minus ipsum! Vero omnis et harum quis voluptates repellendus quod sequi esse? Odit iure quae dolores blanditiis dolore?.</p>
                 </div>
@@ -55,33 +57,51 @@
         </section>
         <hr>
 
-
-
-        <section>
-            <h2>Nuestros Integrantes</h2>
-            <ul>
-                <li>Pablo Viedma - Director</li>
-                <li>Claudia Tamblay - Directora de Marketing</li>
-                <li>Cecilia Ramirez - Coordinadora</li>
-            </ul>
+        <section class="row justify-content-around">
+            <div><h2 class="text-center p-3 col-12">NUESTRO EQUIPO</h2></div>
+            <div class="card col-3 col-sm-3" style="width: 18rem;">
+                <img src="img/director.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pablo Viedma</h5>
+                    <h5 class="card-title">Director</h5>
+                    <p class="card-text">Joven talentoso creador de nuestra ONG, que ayuda a miles de animales a encotrar dueños</p>
+                </div>
+            </div>
+            <div class="card col-3 col-sm-3" style="width: 18rem;">
+                <img src="img/director.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Claudia Tamblay</h5>
+                    <h5 class="card-title">Directora de Marketing</h5>
+                    <p class="card-text">Joven talentoso creador de nuestra ONG, que ayuda a miles de animales a encotrar dueños</p>
+                </div>
+            </div>
+            <div class="card col-3 col-sm-3" style="width: 18rem;">
+                <img src="img/jarvi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jarvi Barona</h5>
+                    <h5 class="card-title">Perro Culo</h5>
+                    <p class="card-text">Joven talentoso creador de nuestra ONG, que ayuda a miles de animales a encotrar dueños</p>
+                </div>
+            </div>
         </section>
+        
         <hr>
-        <section>
-            <article>
-                <h2> Nuestras secciones de ayuda</h2>
-                <table class="table">
-                    <tr>
-                        <th><img src="img/perros.jpg" width="300px"><a href=""></a></th>
-                        <th><a href="gatos.html"><h2>Perros</h2></a></th>
-                    </tr>
-                    <tr>
-                        <th><img src="img/gatos.jpg" width="300px"></a>
-                        <th><a href="gatos.html"><h2>Gatos</h2></a> </th>
-                    </tr>
-                    
-
-                </table>
-            </article>
+        <div class="col-12"><h2 class="text-center p-3 col-12">Estas preparado para adoptar?</h2></div>
+        <section class="row justify-content-around gx-4">
+            <div class="card col-4 gx-4 p-3" style="width: 18rem;">
+                <img src="img/gatos.jpg" class="card-img-top" alt="gatos">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gatos para adportar</h5>                  
+                    <a href="gatos.html" class="btn btn-primary d-grid gap-2">Vamos!</a>
+                </div>
+            </div>
+            <div class="card col-4 gx-4 p-3" style="width: 18rem;">
+                <img src="img/perros.jpg" class="card-img-top" alt="perros">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Perros para adportar</h5>                  
+                    <a href="perros.html" class="btn btn-primary d-grid gap-2">Vamos!</a>
+                </div>
+            </div>
         </section>
 
         <hr>
